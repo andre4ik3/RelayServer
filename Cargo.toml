@@ -1,0 +1,26 @@
+[package]
+name = "relay"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["full"] }
+bytes = "1"
+anyhow = "1"
+http = "1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Crypto
+rustls = { version = "0.23", features = ["aws-lc-rs"] }
+#rcgen = { version = "0.13", default-features = false, features = ["aws_lc_rs"] }
+rustls-webpki = "0.103"
+
+# HTTP/3
+h3 = "0.0.8"
+h3-datagram = "0.0.2"
+h3-quinn = { version = "0.0.10", features = ["datagram"] }
+quinn = { version = "0.11", default-features = false, features = ["runtime-tokio", "rustls-aws-lc-rs", "bloom"] }
