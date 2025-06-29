@@ -396,12 +396,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hashbrown"
-version = "0.15.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5971ac85611da7067dbfcabef3c70ebb5606018acd9e2a3903a0da507521e0d5"
-
-[[package]]
 name = "home"
 version = "0.5.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -801,7 +795,6 @@ dependencies = [
  "rustls",
  "rustls-webpki",
  "tokio",
- "tokio-util",
  "tracing",
  "tracing-subscriber",
 ]
@@ -1053,12 +1046,8 @@ checksum = "66a539a9ad6d5d281510d5bd368c973d636c02dbf8a67300bfb6b950696ad7df"
 dependencies = [
  "bytes",
  "futures-core",
- "futures-io",
  "futures-sink",
- "futures-util",
- "hashbrown",
  "pin-project-lite",
- "slab",
  "tokio",
 ]
 
